@@ -1,5 +1,5 @@
 // Q1:
-// .now() named constructor can't be const, but it can be a final.
+// .now() named constructor can't be constant, but it can be a final.
 // You can use different parameter name and assign it in the constructor with null-aware operator(??) to add the default value with DateTime.now().
 // Q2:
 abstract class Animal {
