@@ -1,0 +1,64 @@
+// Q1:
+// .now() named constructor can't be const, but it can be a final.
+// You can use different parameter name and assign it in the constructor with null-aware operator(??) to add the default value with DateTime.now().
+// Q2:
+abstract class Animal {
+    void printName();
+    void write();
+}
+ 
+abstract class Animal {
+    void printName();
+    void printSound();
+}
+ 
+class Dog extends Animal{
+    @override
+    void printName()
+    {
+        print("Dog");
+    }
+ 
+    @override
+    void printSound()
+    {
+        print("woof woof!");
+    }
+}
+class Cat extends Animal{
+    @override
+    void printName()
+    {
+        print("Cat");
+    }
+ 
+    @override
+    void printSound()
+    {
+        print("meow");
+    }
+}
+class Cow extends Animal{
+    @override
+    void printName()
+    {
+        print("Cow");
+    }
+ 
+    @override
+    void printSound()
+    {
+        print("Moo");
+    }
+}
+ 
+main()
+{
+    Cat chase = new Cat();
+    chase.printSound();
+    Dog snow = new Dog();
+    snow.printName();
+    Cow wew = new Cow();
+    wew.printSound();
+}
+
